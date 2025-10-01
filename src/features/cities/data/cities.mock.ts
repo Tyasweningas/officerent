@@ -20,7 +20,7 @@ export const cities: City[] = cityNames.map((cityName, i) => {
         id: 1 + i,
         cityNames: cityName,
         officeCount: 1,
-        image: `assets/images/thumbnails/thumbnails-${(i & 3) + 1}.png`,
+        image: `/assets/images/thumbnails/thumbnails-${(i & 3) + 1}.png`,
         slug: cityName.toLowerCase().replace(/ /g, "-")
     }
 });
