@@ -1,4 +1,6 @@
 import { City } from "../types/city.types";
+import Image from "next/image";
+
 
 export default function CityCard({city}: {city: City}) {
 
@@ -11,10 +13,12 @@ export default function CityCard({city}: {city: City}) {
                 </h3>
                 <p className="text-white">189 Offices</p>
               </div>
-              <img
-                src="/assets/images/thumbnails/thumbnails-2.png"
-                className="absolute w-full h-full object-cover"
-                alt="thumbnails"
+              <Image
+              width = {120}
+              height = {200}
+              src = {city.image}
+              className="absolute w-full h-full object-cover"
+              alt = {city.cityNames}
               />
             </div>
         </a>
