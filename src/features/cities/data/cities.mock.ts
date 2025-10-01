@@ -13,12 +13,12 @@ const cityNames = [
     "Depok"
 ];
 
-export const cities: City[] = cityNames.map((cityName, i) => { 
+export const cities: City[] = cityNames.map((cityName, i) => {
     // const officeCount = 
 
     return {
         id: 1 + i,
-        cityName,
+        cityNames: cityName,
         officeCount: 1,
         image: `assets/images/thumbnails/thumbnails-${(i & 3) + 1}.png`,
         slug: cityName.toLowerCase().replace(/ /g, "-")
