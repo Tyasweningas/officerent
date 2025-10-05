@@ -1,7 +1,7 @@
 import { City } from "../types/city.types";
 
 const cityNames = [
-    "Jakkarta Pusat",
+    "Jakarta Pusat",
     "Jakarta Selatan",
     "Bandung",
     "Surabaya",
